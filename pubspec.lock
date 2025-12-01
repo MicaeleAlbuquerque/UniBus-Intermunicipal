@@ -319,6 +319,7 @@ packages:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     version: "0.7.7"
   typed_data:
     dependency: transitive
@@ -328,6 +329,9 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
+=======
+    version: "0.7.6"
+>>>>>>> Stashed changes
 =======
     version: "0.7.6"
 >>>>>>> Stashed changes
