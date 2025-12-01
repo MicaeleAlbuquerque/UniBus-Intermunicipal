@@ -1,6 +1,23 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+// import 'firebase_options.dart'; // TODO: Descomentar após executar 'flutterfire configure'
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // TODO: Descomentar após executar 'flutterfire configure'
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  
+  // Inicialização padrão do Firebase (funciona na maioria dos casos)
+  try {
+    await Firebase.initializeApp();
+  } catch (e) {
+    print('Erro ao inicializar Firebase: $e');
+  }
+  
   runApp(const UniBus());
 }
 
